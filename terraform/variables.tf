@@ -6,11 +6,29 @@ variable "environment" {
 variable "rg_name" {
   type        = string
   description = "The resource group name"
-  default     = "TODO"
+  default     = "rc-codeacademy-example"
 }
 
 variable "rg_location" {
   type        = string
-  description = "Azure region for Right Cloud resources"
+  description = "Azure region for Right Cloud resources 2"
+  default     = "West Europe"
+}
+
+variable "app_service_plan" {
+  type        = string
+  description = "The name of the App Service plan"
+  default     = "CodeAcademy-Net-AppServicePlan-FFB"
+}
+
+variable "app_service" {
+  type        = string
+  description = "The name of the App Service"
+  default     = "CodeAcademy-Net-AppService-FFB"
+}
+
+variable "location" {
+  type        = string
+  description = "Azure region for resources"
   default     = "West Europe"
 }
